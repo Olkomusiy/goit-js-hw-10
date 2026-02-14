@@ -13,10 +13,10 @@ export default defineConfig(({ command }) => {
       sourcemap: true,
       rollupOptions: {
         input: {
-          main: './index.html',
-          timer: './1-timer.html',
-          snackbar: './2-snackbar.html',
-        },
+  main: './index.html',
+  timer: './1-timer.html',
+  snackbar: './2-snackbar.html',
+}
       },
       outDir: '../dist',
       emptyOutDir: true,
