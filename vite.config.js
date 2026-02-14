@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite';
-import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
@@ -13,11 +12,12 @@ export default defineConfig(({ command }) => {
     build: {
       sourcemap: true,
       rollupOptions: {
-  input: {
-    main: './index.html',
-    timer: './1-timer.html',
-    snackbar: './2-snackbar.html',
-  },
+        input: {
+          main: './index.html',
+          timer: './1-timer.html',
+          snackbar: './2-snackbar.html',
+        },
+      },
       outDir: '../dist',
       emptyOutDir: true,
     },
